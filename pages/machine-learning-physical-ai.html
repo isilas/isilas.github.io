@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Machine Learning + Physical AI | Silas Ifeanyi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="../index.html">Silas Ifeanyi</a>
+    <div class="navlinks">
+      <a href="iiot-conveyor.html">IIoT</a>
+      <a href="sald-nano-manufacturing.html">SALD</a>
+      <a class="active" href="machine-learning-physical-ai.html">ML + Physical AI</a>
+      <a href="healthcare-science-rnd.html">Health R&D</a>
+      <a href="project-management-ideas-clinic.html">Project Management</a>
+      <a href="../docs/source-notes.html">Sources</a>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="eyebrow">Machine Vision · Edge AI · Spectral Intelligence</div>
+    <h1>Machine learning for physical systems.</h1>
+    <p class="lede">Perception and learning tied to real hardware — conveyor vision, optical/spectral inspection, and published image-analysis algorithms for materials. Physical AI, not benchmarks in a vacuum.</p>
+  </header>
+
+  <main class="content">
+    <section class="split">
+      <div class="card">
+        <h2>Core thesis</h2>
+        <p>The machine-learning work here is strongest when it's wired to cameras, conveyors, optics, sensors, and data acquisition. I frame it as Physical AI: perception systems that act on real manufacturing, inspection, and education platforms rather than abstract datasets.</p>
+        <ul class="fact-list">
+          <li><strong>Conveyor vision:</strong> Jetson Nano edge nodes classify shapes locally and publish results to the automation stack over MQTT.</li>
+          <li><strong>Published inspection ML:</strong> co-authored automated crack-quantification algorithms for photovoltaic backsheet materials (IEEE, SPIE, Polymer Degradation &amp; Stability).</li>
+          <li><strong>Spectral / optical ML:</strong> a research direction toward real-time material-composition imaging and thin-film inspection.</li>
+          <li><strong>Applied contexts:</strong> Toyota Innovation Challenge and other IDEAs Clinic events provide live automation, sensing, and AI problems.</li>
+        </ul>
+      </div>
+      <div class="image-card"><img src="../assets/conveyor/page-2.png" alt="Conveyor machine vision and network architecture" /><div class="caption">Edge vision outputs connected to the IIoT stack through MQTT.</div></div>
+    </section>
+
+    <section class="section alt">
+      <div class="grid">
+        <div class="card"><div class="kicker">Edge AI</div><h3>Conveyor machine vision</h3><p>Python and Jetson Nano inference logic detect shapes from camera input and send machine-readable results to the conveyor system, computing perception near the line.</p><img src="../assets/conveyor/page-3.png" alt="Machine-vision Python code on the conveyor" /></div>
+        <div class="card"><div class="kicker">Published inspection ML</div><h3>Automated crack quantification</h3><p>Co-developed an automated image-analysis algorithm to quantify cracks in photovoltaic backsheets under accelerated and real-world UV exposures — a non-destructive computer-vision method published with the CWRU SDLE Center.</p><div class="tag-row"><span class="tag">Image analysis</span><span class="tag">Defect detection</span><span class="tag">SPIE / IEEE</span></div></div>
+        <div class="card"><div class="kicker">Research direction</div><h3>Spectral / optical inspection</h3><p>Extending optical metrology toward physics-informed spectral analysis for industrial materials and thin films — measuring composition and quality in real time.</p><div class="tag-row"><span class="tag">Spectral ML</span><span class="tag">Optical systems</span><span class="tag">Thin-film inspection</span></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid two">
+        <div class="card">
+          <h2>Toyota Innovation Challenge</h2>
+          <p>A two-day IDEAs Clinic and TMMC event where students tackle real manufacturing-sector problems through software and hardware challenges. It's evidence of applied automation, manufacturing, and physical-AI program delivery.</p>
+          <p style="margin-top:1rem"><a class="button" href="https://uwaterloo.ca/engineering-ideas-clinic/co-curricular-activities/toyota-innovation-challenge">Challenge page</a></p>
+        </div>
+        <div class="card">
+          <h2>Teaching systems & data-rich labs</h2>
+          <p>Beyond individual projects: machine-vision stations, edge IoT nodes, PLC automation modules, optical inspection setups, sensor dashboards, and real-time monitoring tools developed as hands-on learning modules across engineering courses (including ME and MTE mechatronics integration).</p>
+          <div class="tag-row"><span class="tag">Machine-vision labs</span><span class="tag">Sensor dashboards</span><span class="tag">Hands-on modules</span></div>
+        </div>
+      </div>
+    </section>
+
+    <p class="source-note">Source basis: Conveyor Project PDF; Silas Ifeanyi résumé materials and publication list (PV backsheet crack-quantification papers, IEEE WCPEC 2018, SPIE 2017, Polymer Degradation &amp; Stability 2018); In-Situ Film Quality Monitoring and Nanometrix/BluePaper Imaging notes; University of Waterloo IDEAs Clinic public pages.</p>
+  </main>
+
+  <footer class="footer"><a href="../index.html">← Back to graph</a><a href="../docs/source-notes.html">Source notes</a></footer>
+</body>
+</html>

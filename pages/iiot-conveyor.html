@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IIoT + Conveyor Automation | Silas Ifeanyi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="../index.html">Silas Ifeanyi</a>
+    <div class="navlinks">
+      <a class="active" href="iiot-conveyor.html">IIoT</a>
+      <a href="sald-nano-manufacturing.html">SALD</a>
+      <a href="machine-learning-physical-ai.html">ML + Physical AI</a>
+      <a href="healthcare-science-rnd.html">Health R&D</a>
+      <a href="project-management-ideas-clinic.html">Project Management</a>
+      <a href="../docs/source-notes.html">Sources</a>
+    </div>
+  </nav>
+  <header class="page-hero">
+    <div class="eyebrow">IIoT • Automation • Engineering Education</div>
+    <h1>Conveyor automation system for industrial IoT learning.</h1>
+    <p class="lede">A full-stack IIoT platform built around motor-driven conveyors, PLC control, MQTT messaging, HMI visualization, and Jetson Nano machine vision.</p>
+  </header>
+  <main class="content">
+    <section class="split">
+      <div class="card">
+        <h2>Project overview</h2>
+        <p>The conveyor project is a hands-on automation system used in University of Waterloo engineering courses. It combines four in-house designed conveyors with one off-the-shelf input conveyor. Each conveyor is motor-driven and PLC-controlled, and camera nodes run computer vision locally for real-time object detection.</p>
+        <ul class="fact-list">
+          <li><strong>System:</strong> Four custom conveyors plus one input conveyor, integrated into a multi-station learning platform.</li>
+          <li><strong>Control stack:</strong> PLC logic through Node-RED, HMI dashboards in Ignition, MQTT-based messaging, and Python-based integration.</li>
+          <li><strong>Vision stack:</strong> Cameras connected to NVIDIA Jetson Nanos for local shape/object detection.</li>
+          <li><strong>Role:</strong> Engineering Educational Developer and Project Manager, with hands-on maintenance and revamp work beginning in 2022.</li>
+        </ul>
+      </div>
+      <div class="image-card"><img src="../assets/conveyor/page-1.png" alt="Physical view of conveyor system" /><div class="caption">Physical view of the conveyor system and layout.</div></div>
+    </section>
+
+    <section class="section">
+      <div class="grid two">
+        <div class="image-card"><img src="../assets/conveyor/page-2.png" alt="Network diagram and computer vision output" /><div class="caption">Network architecture and machine-vision output from a Jetson Nano camera node.</div></div>
+        <div class="card">
+          <h2>Engineering contribution</h2>
+          <p>The platform connects low-level industrial control to high-level data systems. The PLC and physical conveyor hardware provide the industrial layer, MQTT functions as the message backbone, Ignition provides the operator interface, and Python/Jetson Nano nodes add edge perception.</p>
+          <div class="tag-row"><span class="tag">Node-RED</span><span class="tag">Groov RIO / PLC I/O</span><span class="tag">MQTT</span><span class="tag">Ignition HMI</span><span class="tag">Python</span><span class="tag">Jetson Nano</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="grid two">
+        <div class="card">
+          <h2>What it demonstrates</h2>
+          <div class="timeline">
+            <div class="item"><h3>Industrial IoT integration</h3><p>Real-time signal flow between sensors, PLC I/O, MQTT topics, Python scripts, and HMIs.</p></div>
+            <div class="item"><h3>Physical AI at the edge</h3><p>Local perception on Jetson Nano nodes, where shape classification is computed near the conveyor and sent to the automation stack.</p></div>
+            <div class="item"><h3>Deployable education systems</h3><p>A maintained platform that students can use to learn automation, control systems, data analysis, and computer vision through direct experimentation.</p></div>
+          </div>
+        </div>
+        <div class="image-card"><img src="../assets/conveyor/page-5.png" alt="Ignition HMI and Node-RED flow" /><div class="caption">Ignition HMI and Node-RED data acquisition / control flow examples.</div></div>
+      </div>
+    </section>
+
+    <p class="source-note">Source basis: Conveyor Project portfolio PDF provided by Silas Ifeanyi.</p>
+  </main>
+  <footer class="footer"><a href="../index.html">← Back to graph</a><a href="../docs/source-notes.html">Source notes</a></footer>
+</body>
+</html>

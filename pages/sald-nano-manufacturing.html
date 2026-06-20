@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SALD + Nano-Manufacturing | Silas Ifeanyi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="../index.html">Silas Ifeanyi</a>
+    <div class="navlinks">
+      <a href="iiot-conveyor.html">IIoT</a>
+      <a class="active" href="sald-nano-manufacturing.html">SALD</a>
+      <a href="machine-learning-physical-ai.html">ML + Physical AI</a>
+      <a href="healthcare-science-rnd.html">Health R&D</a>
+      <a href="project-management-ideas-clinic.html">Project Management</a>
+      <a href="../docs/source-notes.html">Sources</a>
+    </div>
+  </nav>
+  <header class="page-hero">
+    <div class="eyebrow">Advanced Manufacturing • Nanotechnology • Process Control</div>
+    <h1>Industrializing spatial atomic layer deposition.</h1>
+    <p class="lede">Research and tooling for mitigating powder formation in SALD systems and exploring real-time, in-situ metrology for nano-scale thin films.</p>
+  </header>
+  <main class="content">
+    <section class="split">
+      <div class="card">
+        <h2>Problem</h2>
+        <p>Spatial atomic layer deposition enables high-throughput thin-film manufacturing by separating precursor exposure in space instead of time. The industrial challenge is reliability: powder formation can reduce film quality, clog exhaust lines, alter flow balance, and increase maintenance; high-throughput systems also need in-situ film quality monitoring.</p>
+        <ul class="fact-list">
+          <li><strong>Manufacturing target:</strong> scalable SALD processes for conformal thin films.</li>
+          <li><strong>Reliability issue:</strong> powder/dust formation in the substrate region, reactor head, and exhaust line.</li>
+          <li><strong>Quality issue:</strong> need for real-time film-thickness and film-quality monitoring for industrial production.</li>
+        </ul>
+      </div>
+      <div class="image-card"><img src="../assets/sald/sald_process.png" alt="SALD process schematic" /><div class="caption">Spatial ALD separates precursor reactions through gas zones and substrate motion.</div></div>
+    </section>
+
+    <section class="section alt">
+      <div class="grid two">
+        <div class="image-card"><img src="../assets/sald/powder_module.png" alt="Powder quantification module" /><div class="caption">Powder quantification module installed in the SALD exhaust line.</div></div>
+        <div class="card">
+          <h2>Powder quantification</h2>
+          <p>A powder quantification module used exhaust-filter resistance measurements to estimate powder formation rates during deposition. The method enabled systematic process studies instead of relying only on visual observation or post-run cleaning.</p>
+          <div class="tag-row"><span class="tag">Filter resistance</span><span class="tag">Darcy-law inspired analysis</span><span class="tag">Exhaust monitoring</span><span class="tag">Process variables</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="card"><div class="kicker">Control</div><h3>PID exhaust flow control</h3><p>A proportional valve controller maintained exhaust flow while filters clogged, keeping flow conditions more stable during experiments.</p><img src="../assets/sald/pid_control.png" alt="PID control dashboard" /></div>
+        <div class="card"><div class="kicker">Experimentation</div><h3>Process-variable optimization</h3><p>Powder formation was studied against gap spacing, curtain flow, temperature, precursor concentration, and exhaust behavior.</p><img src="../assets/sald/gap_result.png" alt="Gap spacing result" /></div>
+        <div class="card"><div class="kicker">Instrumentation</div><h3>LabVIEW data capture</h3><p>DAQ and software tools supported resistance, flow, and pressure tracking for repeatable powder-formation studies.</p><img src="../assets/sald/labview_dashboard.png" alt="LabVIEW dashboard" /></div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="split">
+        <div class="card">
+          <h2>Metrology exploration</h2>
+          <p>Absorbance spectroscopy, reflectometry, and ellipsometry were tested for measuring SALD-produced Al2O3 and ZnO films on flexible PLA samples. Absorbance worked for small ZnO thicknesses, while Al2O3 and multilayer/flexible substrates required more advanced optical modelling.</p>
+          <ul class="fact-list">
+            <li>Absorbance showed promise for ZnO films in the 12-85 nm range.</li>
+            <li>Al2O3 did not show clear absorbance peaks in the tested setup.</li>
+            <li>Ellipsometry and reflectometry data showed thickness sensitivity, but modelling needs to account for substrate orientation and multilayer refraction effects.</li>
+          </ul>
+        </div>
+        <div class="image-card"><img src="../assets/sald/metrology.png" alt="Metrology result" /><div class="caption">Thin-film optical metrology tests for SALD-created films.</div></div>
+      </div>
+    </section>
+
+    <p class="source-note">Source basis: MASc thesis, “Advancing the Industrialization of Thin Film Deposition...” and the previous SALD portfolio assets generated from that thesis.</p>
+  </main>
+  <footer class="footer"><a href="../index.html">← Back to graph</a><a href="../docs/source-notes.html">Source notes</a></footer>
+</body>
+</html>

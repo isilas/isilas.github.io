@@ -46,16 +46,18 @@
   </main>
   <footer class="footer"><a href="../index.html">← Back to portfolio</a></footer>
   <style>
-    .blog-writing{max-width:760px;margin:0 auto 2rem;line-height:1.8;overflow-wrap:anywhere}
+    .blog-writing{width:100%;max-width:760px;box-sizing:border-box;margin:0 0 2rem;justify-self:start;text-align:left;line-height:1.8;overflow-wrap:anywhere}
     .blog-writing h1,.blog-writing h2,.blog-writing h3{line-height:1.25;margin:1.6em 0 .5em}
     .blog-writing > :first-child{margin-top:0}
     .blog-writing a,#blog-back a{color:#24568f;text-decoration:underline}
-    .blog-writing img{max-width:100%;height:auto}
+    .blog-writing img{display:block;max-width:100%;height:auto;margin:1rem 0;border:1px solid var(--line);border-radius:3px}
+    .blog-writing img[src$="portrait-hd.png"]{width:min(100%,360px)}
     .blog-writing pre{overflow-x:auto;padding:1rem;background:#f2eee4}
     .blog-writing blockquote{border-left:3px solid #24568f;padding-left:1rem;margin-left:0}
     .blog-writing table{display:block;overflow-x:auto;border-collapse:collapse}
     .blog-writing th,.blog-writing td{border:1px solid #b9bcb5;padding:.5rem}
-    #blog-back{max-width:760px;margin:0 auto 2rem}
+    #blog-back{max-width:760px;margin:0 0 2rem;justify-self:start;text-align:left}
+    .page-hero{text-align:left}
   </style>
   <script src="https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/dist/markdown-it.min.js"></script>
   <script src="blog.js"></script>

@@ -30,3 +30,11 @@ Portfolio content is grounded in verified experience, published research and pub
 - Add project images under `assets/<project>/`.
 - Add or edit project pages under `pages/`.
 - The graph nodes are in `index.html`; the animation behavior is in `script.js`.
+
+## Personal blog
+
+Edit `blog/index.md` directly on GitHub. For a separate article, create `blog/my-first-post.md` and link it from `blog/index.md` using `- [My first post](?post=my-first-post)`. Use lowercase letters, numbers and hyphens for post filenames. Commit to `main` to publish through the existing GitHub Pages setup. Markdown is rendered using a pinned markdown-it CDN script; raw HTML is disabled. The blog is reserved for the owner's own writing.
+
+## Change log
+
+- 2026-11-27 — Added a personal Markdown blog with a neutral placeholder and a final navigation link on the homepage and all six case-study pages.

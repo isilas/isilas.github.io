@@ -1,5 +1,14 @@
 (() => {
   'use strict';
+  const awards = document.querySelector('#portfolio-awards');
+  if (awards) {
+    const small = window.matchMedia('(max-width:760px)');
+    const setAwardsLayout = () => { awards.open = !small.matches; };
+    setAwardsLayout();
+    if (small.addEventListener) small.addEventListener('change', setAwardsLayout);
+    else if (small.addListener) small.addListener(setAwardsLayout);
+  }
+
   const input = document.querySelector('#project-search');
   if (!input) return;
   const cards = Array.from(document.querySelectorAll('.project-card'));

@@ -164,3 +164,24 @@
   .sketch-home .project-card .skill-filter,.sketch-page .tag{min-height:0;padding:.22rem .45rem;font-size:.65rem;line-height:1.35;letter-spacing:0}
   .sketch-home .project-card .skill-filter{min-height:28px}
 }
+
+/* Recognition strip: between search and project cards. */
+.sketch-home .portfolio-awards{background:#f8f4ea;border:1px solid var(--line);border-left:3px solid var(--accent);padding:.65rem .9rem;margin:0 auto 1.15rem;min-width:0;box-shadow:2px 3px 0 #d9d4c8}
+.portfolio-awards summary{display:flex;align-items:center;gap:.7rem;list-style:none;cursor:pointer;min-height:30px}
+.portfolio-awards summary::-webkit-details-marker{display:none}
+.portfolio-awards summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.awards-title{font:700 .98rem var(--display);color:var(--text)}
+.awards-count{font:.65rem var(--mono);color:var(--muted)}
+.awards-chevron{width:8px;height:8px;border-right:1.5px solid var(--accent);border-bottom:1.5px solid var(--accent);transform:rotate(45deg);margin-left:auto;margin-right:4px;margin-bottom:4px}
+.portfolio-awards[open] .awards-chevron{transform:rotate(225deg);margin-bottom:0}
+.sketch-home .portfolio-awards .honor-row{margin:.5rem 0 .1rem;gap:.4rem}
+.sketch-home .portfolio-awards .badge{font-size:.76rem;padding:.3rem .55rem;line-height:1.45;max-width:100%;overflow-wrap:anywhere}
+.sketch-home .portfolio-awards .badge a{color:var(--accent)}
+@media(max-width:760px){
+  .sketch-home .portfolio-awards{padding:.2rem .7rem;margin-bottom:.85rem}
+  .portfolio-awards summary{min-height:44px;gap:.5rem}
+  .awards-title{font-size:.95rem}
+  .awards-count{font-size:.62rem}
+  .sketch-home .portfolio-awards .honor-row{display:grid;grid-template-columns:minmax(0,1fr);gap:.35rem;margin:0 0 .5rem}
+  .sketch-home .portfolio-awards .badge{font-size:.73rem;padding:.4rem .5rem}
+}

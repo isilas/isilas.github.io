@@ -1,5 +1,14 @@
 (() => {
   'use strict';
+  // Show the résumé CTA only when the original PDF has been deployed.
+  const resume = document.querySelector('#resume-download');
+  if (resume) {
+    fetch(resume.href, { method: 'HEAD', cache: 'no-cache' })
+      .then(response => {
+        if (response.ok && (response.headers.get('content-type') || '').toLowerCase().includes('application/pdf')) resume.hidden = false;
+      })
+      .catch(() => {});
+  }
   const awards = document.querySelector('#portfolio-awards');
   if (awards) {
     const small = window.matchMedia('(max-width:760px)');

@@ -44,3 +44,62 @@
 .sketch-page .footer a:hover{text-decoration:underline}
 @media(max-width:760px){.case-hero-grid{grid-template-columns:1fr}.case-hero-figure{width:min(100%,340px);transform:none}.sketch-page .content .section.alt{padding:1rem 0}.sketch-page .card{padding:1rem}}
 @media(prefers-reduced-motion:reduce){.sketch-page .card:hover,.case-hero-figure:hover{transform:none}}
+
+/* Shared mobile navigation and compact portrait-first layout. */
+.nav-toggle{display:none;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;border:1px solid var(--line2);border-radius:4px;background:var(--panel);color:var(--accent);cursor:pointer}
+.nav-toggle[hidden]{display:none!important}
+.nav-toggle-icon{display:grid;gap:5px;width:22px}
+.nav-toggle-icon span{display:block;height:2px;width:100%;background:currentColor;transition:transform .18s,opacity .18s}
+.nav-toggle[aria-expanded=true] .nav-toggle-icon span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle[aria-expanded=true] .nav-toggle-icon span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded=true] .nav-toggle-icon span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1080px){
+  :is(.sketch-home,.sketch-page) .nav{position:sticky;top:0;flex-direction:row;align-items:center;flex-wrap:wrap;gap:.35rem;padding:.55rem clamp(.85rem,4vw,1.4rem);background:#f8f4ea}
+  .nav .brand{white-space:nowrap;min-width:0}
+  .nav.nav-enhanced .nav-toggle{display:inline-flex}
+  .nav .navlinks{flex-basis:100%;width:100%;display:grid;grid-template-columns:1fr;gap:0;padding:.35rem 0}
+  .nav.nav-enhanced .navlinks:not(.is-open){display:none}
+  .nav .navlinks a{display:flex;align-items:center;min-height:44px;padding:.6rem .75rem;border-bottom:1px solid var(--line);font-size:.9rem}
+  .nav .navlinks a:last-child{border-bottom:0}
+  .nav.nav-enhanced .navlinks.is-open{max-height:calc(100dvh - 66px);overflow-y:auto;overscroll-behavior:contain}
+  .project-section{scroll-margin-top:76px}
+}
+@media(max-width:760px){
+  .sketch-hero{grid-template-columns:minmax(0,1fr);gap:1.1rem;padding:1rem clamp(.85rem,4vw,1.5rem) 1.5rem;min-height:0}
+  .sketch-hero .hero-art{order:-1;width:min(100%,440px);min-height:0;height:clamp(208px,74vw,320px);justify-self:center}
+  .sketch-hero .hero-copy{min-width:0}
+  .sketch-hero .portrait{width:60%;max-width:205px;z-index:3;padding:6px 6px 3px}
+  .sketch-hero .portrait figcaption{font-size:clamp(.5rem,1.8vw,.65rem);padding:.35rem 0;white-space:nowrap}
+  .sketch-hero .hero-layer{width:42%;z-index:1}
+  .sketch-hero .layer-optics{right:0;bottom:6%;z-index:2}
+  .sketch-hero .layer-conveyor{top:4%}
+  .sketch-hero .draft-note{font-size:.55rem}
+  .sketch-hero .note-c{right:2%;top:20%}
+  .sketch-hero .sheet-number{font-size:.52rem}
+  .sketch-hero h1{font-size:clamp(2.25rem,12vw,3.7rem);line-height:1;letter-spacing:-.05em;margin:.65rem 0 1rem}
+  .sketch-hero .lede{font-size:1rem;margin-top:1.15rem}
+  .sketch-hero .sheet-label{font-size:.63rem;letter-spacing:.1em;max-width:100%;white-space:normal}
+  .sketch-hero .actions{margin-top:1rem;gap:.45rem}
+  .sketch-hero .actions .button{min-height:44px;padding:.6rem .8rem;font-size:.82rem;white-space:normal}
+  .sketch-home .metrics{grid-template-columns:repeat(2,minmax(0,1fr));padding-inline:clamp(.85rem,4vw,1.5rem)}
+  .sketch-home .metric{min-width:0;padding:1rem .45rem}
+  .sketch-page .content,.sketch-page .page-hero,.sketch-home .section{padding-inline:clamp(.85rem,4vw,1.5rem)}
+  .sketch-page .grid,.sketch-page .grid.two,.sketch-page .split,.sketch-home .project-grid{grid-template-columns:minmax(0,1fr)}
+  .sketch-page .card,.sketch-page .image-card,.sketch-home .project-card,.sketch-home .search-panel{min-width:0;max-width:100%;overflow-wrap:anywhere}
+  .sketch-page .image-card video{max-width:100%;height:auto}
+  .sketch-page .actions .button{min-height:44px;white-space:normal;overflow-wrap:anywhere}
+  .sketch-home .tag,.sketch-page .tag{white-space:normal;max-width:100%;overflow-wrap:anywhere}
+  .sketch-home .skill-filter{min-height:40px}
+  .sketch-home .project-section{margin-top:1.4rem;padding-block:2rem}
+  .sketch-page .page-hero h1{font-size:clamp(2rem,8vw,3rem)}
+  .sketch-home .footer,.sketch-page .footer{overflow-wrap:anywhere}
+}
+@media(max-width:360px){
+  .sketch-hero .hero-art{height:220px}
+  .sketch-hero .draft-note{font-size:.48rem}
+  .sketch-hero .portrait{width:58%}
+  .sketch-home .search-input{gap:.3rem;padding:.25rem .4rem}
+  .sketch-home .search-input input{font-size:.85rem}
+  .sketch-home .search-input button{font-size:.8rem;min-height:40px}
+}
+@media(prefers-reduced-motion:reduce){.nav-toggle-icon span{transition:none}}

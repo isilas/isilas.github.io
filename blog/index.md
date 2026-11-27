@@ -1,1 +1,1 @@
-Coming soon.
+- [My first post](?post=my-first-post)

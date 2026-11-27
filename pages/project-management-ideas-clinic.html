@@ -13,13 +13,15 @@
 <body class="sketch-page">
   <nav class="nav">
     <a class="brand" href="../index.html">Silas Ifeanyi</a>
-    <div class="navlinks">
+    <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation menu" hidden><span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span></button>
+    <div class="navlinks" id="site-navigation">
       <a href="../index.html#projects">Projects &amp; Skills</a>
       <a href="iiot-conveyor.html">IIoT</a>
       <a href="sald-nano-manufacturing.html">SALD</a>
       <a href="machine-learning-physical-ai.html">ML + Physical AI</a>
       <a href="healthcare-science-rnd.html">Health R&D</a>
       <a class="active" aria-current="page" href="project-management-ideas-clinic.html">Project Management</a>
+      <a href="web-development.html">Web Development</a>
       <a href="../docs/source-notes.html">Sources</a>
     </div>
   </nav>
@@ -94,5 +96,6 @@
     <p class="source-note">Source basis: Align 2026 Notion resume material and University of Waterloo IDEAs Clinic public profile, homepage, and challenge pages.</p>
   </main>
   <footer class="footer"><a href="../index.html">← Back to portfolio</a><a href="../docs/source-notes.html">Source notes</a></footer>
+  <script src="../navigation.js"></script>
 </body>
 </html>
